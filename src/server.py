@@ -21,6 +21,7 @@ from tool_registry.file_tools import register_file_tools
 from tool_registry.folder_tools import register_folder_tools
 from tool_registry.generic_tools import register_generic_tools
 from tool_registry.group_tools import register_group_tools
+from tool_registry.invoice_tools import register_invoice_tools
 from tool_registry.metadata_tools import register_metadata_tools
 from tool_registry.search_tools import register_search_tools
 from tool_registry.shared_link_tools import register_shared_link_tools
@@ -92,10 +93,11 @@ def register_tools(mcp: FastMCP) -> None:
         [
             register_generic_tools,
             register_search_tools,
-            register_ai_tools,
+        register_ai_tools,
             register_doc_gen_tools,
             register_file_tools,
             register_folder_tools,
+            register_invoice_tools,
             register_metadata_tools,
             register_user_tools,
             register_group_tools,
