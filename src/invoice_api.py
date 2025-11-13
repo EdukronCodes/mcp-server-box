@@ -10,7 +10,7 @@ from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
-from pdf_processor import InvoiceFieldExtractor, process_invoices_in_directory
+from .pdf_processor import InvoiceFieldExtractor, process_invoices_in_directory
 
 logger = logging.getLogger(__name__)
 
